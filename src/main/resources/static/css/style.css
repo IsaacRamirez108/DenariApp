@@ -2,17 +2,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body {
+ body {
     /*background: linear-gradient(to right top, #081b29, #03284e);*/
     background-image: linear-gradient(to right top, #0d2c5a, #03284e, #012442, #042035, #081b29);
     /*background: white;*/
     margin:0;
     padding:0;
     color: white;
-    height: 100%;
-}
-
-html {
     height: 100%;
 }
 
@@ -330,5 +326,10 @@ h6{
     .col {
         flex: 1;
     }
+}
+
+.required:after {
+    content:" *";
+    color: red;
 }
 
