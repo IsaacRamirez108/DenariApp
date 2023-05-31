@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    /*background: linear-gradient(to right top, #081b29, #03284e);*/
+    background-image: linear-gradient(to right top, #0d2c5a, #03284e, #012442, #042035, #081b29);
+    /*background: white;*/
+    margin:0;
+    padding:0;
+    color: white;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+li{
+    margin-bottom: 1.5em;
+}
+
+/* Sign up Steps Form */
+#notComplete, #submitGood, #dbError {
+    display:none;
+}
+#results {
+    text-align:center;
+    width:600px;
+    margin: 50px auto 0;
+    color:#222;
+}
+
+label {
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt;
+    padding-left: 10px;
+}
+
+.home {
+    height: 100vh;
+    /*background: url(../img/MainImg.png) no-repeat;*/
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+    z-index: 101;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #03e9f4;
+}
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes manipActiveHover {
+    100% {
+        pointer-events: auto;
+    }
+}
+
+
+#card {
+    max-width: 45%;
+    margin: 50px auto;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#card-title {
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+#card-title h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-left: 1em
+}
+
+.form-content {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-content:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#forgot-pass {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    text-align: right;
+    display: block;
+    margin-top: 10px;
+}
+
+#signup {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    text-align: center;
+    text-decoration: none;
+}
+
+#signup:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #card {
+        width: 90%;
+    }
+
+    .form-content {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #forgot-pass, #signup {
+        font-size: 14px;
+    }
+}
+
+#signup {
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 10pt;
+    margin-top: 16px;
+    text-align: center;
+}
+#submit-btn {
+    background: -webkit-linear-gradient(right, #03e9f4, #22D8F3);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 1px 8px #1BC2D8;
+    cursor: pointer;
+    color: white;
+    font-family: "Raleway SemiBold", sans-serif;
+    height: 43px;
+    margin: 50px auto 0;
+    transition: 0.25s;
+    width: 100%;
+}
+#submit-btn:hover {
+    box-shadow: 0px 1px 18px #1BC2D8;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    width: 50%;
+}
+
+.logo {
+    margin: 1em;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.secondTitle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* Style the form */
+#regForm {
+    /*background-image: linear-gradient(to right top, #0d2c5a, #03284e, #012442, #042035, #081b29);*/
+    background: #ededed;
+    color: black;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Style the input fields */
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #03e9f4;
+}
+
+.container{
+    margin-top: 2em;
+}
+
+/* Style the button */
+.formBtn {
+    background-color: #03e9f4;
+    color: white;
+    margin-top: 1.5em;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Style the button on hover */
+.formBtn:hover {
+    background-color: #0396c5;
+}
+
+.mainFormBtn{
+    display: flex;
+    width: 100%;
+}
+
+h1{
+    color: #03e9f4;
+}
+h6{
+    margin-bottom: 1em;
+}
+
+/* For screens smaller than 576px (e.g., mobile devices) */
+@media (max-width: 575px) {
+    .col {
+        width: 100%;
+    }
+}
+
+/* For screens larger than 576px (e.g., tablets and desktops) */
+@media (min-width: 576px) {
+    .row {
+        display: flex;
+    }
+
+    .col {
+        flex: 1;
+    }
+}
+
