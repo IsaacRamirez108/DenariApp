@@ -23,7 +23,7 @@ public class UserController {
     @GetMapping("/")
     public String registrationForm(Model model) {
         model.addAttribute("user", new User());
-        return "index";
+        return "/index";
     }
 
     @PostMapping("/")
