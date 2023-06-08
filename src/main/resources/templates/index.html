@@ -12,8 +12,9 @@
     <script id="search-js" defer="" src="https://api.mapbox.com/search-js/v1.0.0-beta.14/web.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" th:href="@{/css/style.css}">
-
 </head>
+
+
 
 <body>
 <div class="logo">
@@ -25,13 +26,13 @@
 
 <div class="container secondTitle">
     <h1>Welcome to Denari</h1>
-    <h3>Maximize your credit score</h3>
+    <h3>Let us help you maximize your credit score</h3>
 </div>
 
 <div class="container">
     <div class="row">
         <!--REGISTRATION FORM-->
-        <div class="col 6">
+        <div class="col-lg-6 col-md-12">
             <form id="regForm" th:action="@{/}" th:method="POST" th:object="${user}">
                 <!-- One "tab" for each step in the form: -->
                 <div class="tab">
@@ -125,7 +126,7 @@
             </form>
         </div>
 
-        <div class="col 6">
+        <div class="col 6 sectionTwo">
             <div class="home-content">
                 <p>At denari, we understand that paying rent every month is an important part of building a strong
                     credit history. However, landlords choose not to report your rental data.
@@ -134,27 +135,26 @@
                 </p>
             </div>
             <div class="row">
-                <!--                <div class="thirdHeader">-->
-                <!--                    <h6 style="color: #03e9f4">Reporting payments offers several benefits:</h6>-->
-                <!--                </div>-->
-                <div class="col 6">
-                    <h6 style="color: #03e9f4">Reporting payments offers several benefits:</h6>
-                    <ul>
-                        <li>Build a Strong Credit History</li>
-                        <li>Improve Credit Scores</li>
-                        <li>Enhance Loan Approval Chances</li>
-                        <li>Create a Financial Track Record</li>
-                    </ul>
-                </div>
-                <div class="col 6">
-                    <h6 style="color: #03e9f4">Join our Beta Program Today</h6>
-                    <p>
-                        By joining our beta program, you get exclusive early access to our cutting-edge credit reporting
-                        platform.
-                        As a beta user, you have the opportunity to shape the future of our service and provide valuable
-                        feedback that will help us refine and enhance our offering.
-                    </p>
-                </div>
+<!--                <div class="col-lg-6 col-md-12">-->
+                    <div class="col-lg-6 col-md-12">
+                        <h6 style="color: #03e9f4">Reporting payments offers several benefits:</h6>
+                        <ul>
+                            <li>Build a Strong Credit History</li>
+                            <li>Improve Credit Scores</li>
+                            <li>Enhance Loan Approval Chances</li>
+                            <li>Create a Financial Track Record</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <h6 style="color: #03e9f4">Join our Beta Program Today</h6>
+                        <p>
+                            By joining our beta program, you get exclusive early access to our cutting-edge credit reporting
+                            platform.
+                            As a beta user, you have the opportunity to shape the future of our service and provide valuable
+                            feedback that will help us refine and enhance our offering.
+                        </p>
+                    </div>
+<!--                </div>-->
             </div>
         </div>
     </div>

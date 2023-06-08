@@ -2,29 +2,32 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
- body {
-    /*background: linear-gradient(to right top, #081b29, #03284e);*/
+
+body,
+html {
     background-image: linear-gradient(to right top, #0d2c5a, #03284e, #012442, #042035, #081b29);
-    /*background: white;*/
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     color: white;
     height: 100%;
 }
 
-li{
+li {
     margin-bottom: 1.5em;
 }
 
 /* Sign up Steps Form */
-#notComplete, #submitGood, #dbError {
-    display:none;
+#notComplete,
+#submitGood,
+#dbError {
+    display: none;
 }
+
 #results {
-    text-align:center;
-    width:600px;
+    text-align: center;
+    width: 600px;
     margin: 50px auto 0;
-    color:#222;
+    color: #222;
 }
 
 label {
@@ -35,7 +38,6 @@ label {
 
 .home {
     height: 100vh;
-    /*background: url(../img/MainImg.png) no-repeat;*/
     background-size: cover;
     background-position: center;
     display: flex;
@@ -89,7 +91,6 @@ label {
     }
 }
 
-
 #card {
     max-width: 45%;
     margin: 50px auto;
@@ -122,7 +123,7 @@ label {
     font-size: 14px;
     font-weight: 500;
     color: #555;
-    margin-left: 1em
+    margin-left: 1em;
 }
 
 .form-content {
@@ -166,28 +167,6 @@ label {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    #card {
-        width: 90%;
-    }
-
-    .form-content {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    #forgot-pass, #signup {
-        font-size: 14px;
-    }
-}
-
-#signup {
-    color: black;
-    font-family: "Raleway", sans-serif;
-    font-size: 10pt;
-    margin-top: 16px;
-    text-align: center;
-}
 #submit-btn {
     background: -webkit-linear-gradient(right, #03e9f4, #22D8F3);
     border: none;
@@ -201,9 +180,11 @@ label {
     transition: 0.25s;
     width: 100%;
 }
+
 #submit-btn:hover {
     box-shadow: 0px 1px 18px #1BC2D8;
 }
+
 .center {
     display: block;
     margin-left: auto;
@@ -216,14 +197,15 @@ label {
     flex-wrap: nowrap;
     justify-content: center;
 }
+
 .secondTitle {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 /* Style the form */
 #regForm {
-    /*background-image: linear-gradient(to right top, #0d2c5a, #03284e, #012442, #042035, #081b29);*/
     background: #ededed;
     color: black;
     padding: 40px;
@@ -244,7 +226,7 @@ input {
     border: 1px solid #aaaaaa;
 }
 
-/* Mark input boxes that gets an error on validation: */
+/* Mark input boxes that get an error on validation: */
 input.invalid {
     background-color: #ffdddd;
 }
@@ -276,7 +258,7 @@ input.invalid {
     background-color: #03e9f4;
 }
 
-.container{
+.container {
     margin-top: 2em;
 }
 
@@ -298,38 +280,80 @@ input.invalid {
     background-color: #0396c5;
 }
 
-.mainFormBtn{
+.mainFormBtn {
     display: flex;
     width: 100%;
 }
 
-h1{
+h1 {
     color: #03e9f4;
 }
-h6{
+
+h6 {
     margin-bottom: 1em;
 }
 
-/* For screens smaller than 576px (e.g., mobile devices) */
-@media (max-width: 575px) {
-    .col {
+/* For screens smaller than 576px (mobile devices) */
+@media (max-width: 575.98px) {
+    .home-content h1 {
+        font-size: 40px;
+    }
+    .home-content h3 {
+        font-size: 24px;
+    }
+    .home-content p {
+        font-size: 14px;
+    }
+    .home-content .btn-box {
         width: 100%;
     }
-}
-
-/* For screens larger than 576px (e.g., tablets and desktops) */
-@media (min-width: 576px) {
-    .row {
-        display: flex;
+    #card {
+        max-width: 90%;
     }
-
-    .col {
-        flex: 1;
+    .sectionTwo{
+        margin-top: 2em;
     }
 }
 
-.required:after {
-    content:" *";
-    color: red;
+/* For screens between 576px and 991.98px */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .home-content h1 {
+        font-size: 48px;
+    }
+    .home-content h3 {
+        font-size: 28px;
+    }
+    .home-content p {
+        font-size: 16px;
+    }
+    .home-content .btn-box {
+        width: 100%;
+    }
+    #card {
+        max-width: 60%;
+    }
+    .sectionTwo{
+        margin-top: 4em;
+    }
 }
+
+/* For screens larger than 991.98px */
+@media (min-width: 992px) {
+    .home-content h1 {
+        font-size: 56px;
+    }
+    .home-content h3 {
+        font-size: 32px;
+    }
+    .home-content p {
+        font-size: 16px;
+    }
+    .home-content .btn-box {
+        width: 345px;
+    }
+    #card {
+        max-width: 45%;
+    }
+}
+
 
