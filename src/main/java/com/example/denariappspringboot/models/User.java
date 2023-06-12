@@ -10,33 +10,33 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column
+    @Column (nullable = false)
     private String firstName;
     @Column
     private String middleName;
-    @Column
+    @Column (nullable = false)
     private String lastName;
-    @Column
+    @Column (nullable = false)
     private String email;
-    @Column
+    @Column (nullable = false)
     private String SSN;
-    @Column
+    @Column (nullable = false)
     private String DOB;
-    @Column
+    @Column (nullable = false)
     private String phoneNumber;
-    @Column
+    @Column (nullable = false)
     private String street;
     @Column
     private String appt_number;
-    @Column
+    @Column (nullable = false)
     private String city;
-    @Column
+    @Column (nullable = false)
     private String state;
     @Column
     private String postal_code;
-    @Column
+    @Column (nullable = false)
     private String monthly_rent;
-    @Column
+    @Column (nullable = false)
     private String moveIn_date;
     @Column
     private String moveOut_date;

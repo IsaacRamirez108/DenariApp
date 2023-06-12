@@ -318,13 +318,13 @@ h6 {
 /* For screens between 576px and 991.98px */
 @media (min-width: 576px) and (max-width: 991.98px) {
     .home-content h1 {
-        font-size: 48px;
+        font-size: 58px;
     }
     .home-content h3 {
-        font-size: 28px;
+        font-size: 38px;
     }
     .home-content p {
-        font-size: 16px;
+        font-size: 26px;
     }
     .home-content .btn-box {
         width: 100%;
