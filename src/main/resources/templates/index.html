@@ -38,7 +38,7 @@
                 <div class="tab">
                     <div class="row">
                         <div class="col 6">
-                            <label for="firstname" class="required" style="padding-top:13px">First Name</label>
+                            <label for="firstname" class="star" style="padding-top:13px">First Name</label>
                             <input type="text" id="firstname" name="firstname" class="form-content required" autocomplete="on"
                                    th:field="*{firstName}" />
                         </div>
@@ -49,32 +49,32 @@
                         </div>
                     </div>
 
-                    <label for="lastname" class="required" style="padding-top:13px">Last Name</label>
+                    <label for="lastname" class="star" style="padding-top:13px">Last Name</label>
                     <input id="lastname" name="lastname" class="form-content required" type="text" autocomplete="on"
                            th:field="*{lastName}" />
 
-                    <label for="email" class="required" style="padding-top:13px">Email</label>
+                    <label for="email" class="star" style="padding-top:13px">Email</label>
                     <input id="email" name="email" type="text" class="form-content required" autocomplete="on"
                            th:field="*{email}" required>
                 </div>
 
                 <div class="tab">
-                    <label for="DOB" class="required" style="padding-top:13px">Data of Birth</label>
+                    <label for="DOB" class="star" style="padding-top:13px">Data of Birth</label>
                     <input id="DOB" class="form-content required" type="text" th:field="*{DOB}"/>
 
-                    <label for="SSN" class="required" style="padding-top:13px">Social Security Number</label>
+                    <label for="SSN" class="star" style="padding-top:13px">Social Security Number</label>
                     <input id="SSN" class="form-content required" type="text" th:field="*{SSN}"/>
 
-                    <label for="phone-number" class="required" style="padding-top:22px">&nbsp;Phone Number</label>
+                    <label for="phone-number" class="star" style="padding-top:22px">&nbsp;Phone Number</label>
                     <input id="phone-number" type="tel" class="form-content required" th:field="*{phoneNumber}"/>
                 </div>
 
                 <div class="tab">
                     <mapbox-address-autofill
                             access-token="pk.eyJ1IjoiaXJhbWlyZXoxMDgiLCJhIjoiY2xiMm56NGE5MDNnbDNzcGh5dmoyeXVjNSJ9.K6sMjb-FN0pH8o1piPNklA">
-                        <label class="required" style="padding-top:13px">Address</label>
+                        <label class="star" style="padding-top:13px">Address</label>
                         <input class="text form-content required" autocomplete="address-line1" th:field="*{street}">
-                        <label class="required" style="padding-top:13px">City</label>
+                        <label class="star" style="padding-top:13px">City</label>
                         <input class="text form-content required" autocomplete="address-level2" th:field="*{city}">
                         <div class="row">
                             <div class="col 4">
@@ -82,11 +82,11 @@
                                 <input class="text form-content" autocomplete="address-line2" th:field="*{appt_number}">
                             </div>
                             <div class="col 4">
-                                <label class="required" style="padding-top:13px">State</label>
+                                <label class="star" style="padding-top:13px">State</label>
                                 <input class="text form-content required" autocomplete="address-level1" th:field="*{state}">
                             </div>
                             <div class="col 4">
-                                <label class="required" style="padding-top:13px">Zip code</label>
+                                <label class="star" style="padding-top:13px">Zip code</label>
                                 <input class="text form-content required" autocomplete="postal-code" th:field="*{postal_code}">
                             </div>
                         </div>
@@ -94,16 +94,16 @@
                 </div>
 
                 <div class="tab">
-                    <label class="required" style="padding-top:13px">Monthly Rent</label>
+                    <label class="star" style="padding-top:13px">Monthly Rent</label>
                     <input class="form-content required" id="amount" th:field="*{monthly_rent}">
 
                     <div class="row">
                         <div class="col 6">
-                            <label class="required" style="padding-top:13px">Move in date</label>
+                            <label class="star" style="padding-top:13px">Move in date</label>
                             <input type="text" id="MID" class="form-content required" th:field="*{moveIn_date}">
                         </div>
                         <div class="col 6">
-                            <label class="required" style="padding-top:13px">Move out date</label>
+                            <label class="star" style="padding-top:13px">Move out date</label>
                             <input type="text" id="MOD" class="form-content" th:field="*{moveOut_date}">
                         </div>
                     </div>

@@ -36,6 +36,12 @@ label {
     padding-left: 10px;
 }
 
+.star label:before {
+    color: #e32;
+    content: ' *';
+    display:inline;
+}
+
 .home {
     height: 100vh;
     background-size: cover;
