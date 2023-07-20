@@ -264,9 +264,9 @@ input.invalid {
     background-color: #03e9f4;
 }
 
-.container {
-    margin-top: 2em;
-}
+/*.container {*/
+/*    margin-top: 2em;*/
+/*}*/
 
 /* Style the button */
 .formBtn {
@@ -362,4 +362,9 @@ h6 {
     }
 }
 
-
+.form-check{
+    padding-top:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
