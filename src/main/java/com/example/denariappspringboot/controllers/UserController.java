@@ -39,14 +39,5 @@ public class UserController {
         return "successful";
     }
 
-    @GetMapping("/privacy-policy")
-    public String showPolicy() {
-        return "Legal/Privacy_Policy";
-    }
-
-    @GetMapping("/terms-of-use")
-    public String showTerms() {
-        return "Legal/Terms_Conditions";
-    }
 }
 
