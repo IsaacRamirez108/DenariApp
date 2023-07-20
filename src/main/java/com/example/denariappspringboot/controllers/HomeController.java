@@ -8,11 +8,11 @@ public class HomeController {
 
     @GetMapping("/privacy-policy")
     public String showPolicy() {
-        return "Legal/Privacy_Policy";
+        return "Legal/privacy-policy";
     }
 
     @GetMapping("/terms-of-use")
     public String showTerms() {
-        return "Legal/Terms_Conditions";
+        return "Legal/terms-of-use";
     }
 }
