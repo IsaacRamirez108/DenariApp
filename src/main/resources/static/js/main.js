@@ -1,9 +1,6 @@
-// // "use strict";
-// // (function(){
-//
-//     const MapBox_API_KEY = "pk.eyJ1IjoiaXJhbWlyZXoxMDgiLCJhIjoiY2xiMm56NGE5MDNnbDNzcGh5dmoyeXVjNSJ9.K6sMjb-FN0pH8o1piPNklA";
-//
-//     var currentTab = 0; // Current tab is set to be the first tab (0)
+// "use strict";
+// (function(){
+//     let currentTab = 0; // Current tab is set to be the first tab (0)
 //     showTab(currentTab); // Display the current tab
 //
 //     function showTab(n) {
@@ -48,17 +45,17 @@
 //         // This function deals with validation of the form fields
 //         let x, y, i, valid = true;
 //         x = document.getElementsByClassName("tab");
-//         y = x[currentTab].getElementsByTagName("input");
+//         y = x[currentTab].getElementsByClassName("required");
 //         // A loop that checks every input field in the current tab:
-//         // for (i = 0; i < y.length; i++) {
-//         //     // If a field is empty...
-//         //     if (y[i].value === "") {
-//         //         // add an "invalid" class to the field:
-//         //         y[i].className += " invalid";
-//         //         // and set the current valid status to false
-//         //         valid = false;
-//         //     }
-//         // }
+//         for (i = 0; i < y.length; i++) {
+//             // If a field is empty...
+//             if (y[i].value === "") {
+//                 // add an "invalid" class to the field:
+//                 y[i].className += " invalid";
+//                 // and set the current valid status to false
+//                 valid = false;
+//             }
+//         }
 //         // If the valid status is true, mark the step as finished and valid:
 //         if (valid) {
 //             document.getElementsByClassName("step")[currentTab].className += " finish";
@@ -76,7 +73,7 @@
 //         x[n].className += " active";
 //     }
 //
-//     $(document).ready(function (){
+//     $(document).ready(function () {
 //         $("#SSN").mask('000-00-0000');
 //         $("#phone-number").mask('(000)000-0000');
 //         $("#amount").mask('$00000');
@@ -86,27 +83,27 @@
 //     });
 //
 //
-// // const script = document.getElementById('search-js');
-// // script.onload = () => {
-// //      mapboxsearch.autofill({accessToken: MapBox_API_KEY});
-// //
-// //     mapboxsearch.config.accessToken = MapBox_API_KEY;
-// //     // Adding confirmation prompt to Users address
-// //     const form = document.querySelector('form');
-// //     form.addEventListener("submit", async (e) => {
-// //         e.preventDefault();
-// //         const result = await confirmAddress(form, {
-// //             minimap: true,
-// //             skipConfirmModal: (feature) =>
-// //                 ['exact', 'high'].includes(
-// //                     feature.properties.match_code.confidence
-// //                 )
-// //         });
-// //         if (result.type === 'nochange') submitForm();
-// //     });
-// // };
-// //
-// //
+//     const script = document.getElementById('search-js');
+//     script.onload = () => {
+//         mapboxsearch.autofill({accessToken: MapBox_API_KEY});
+//
+//         mapboxsearch.config.accessToken = MapBox_API_KEY;
+//         // Adding confirmation prompt to Users address
+//         const form = document.querySelector('form');
+//         form.addEventListener("submit", async (e) => {
+//             e.preventDefault();
+//             const result = await confirmAddress(form, {
+//                 minimap: true,
+//                 skipConfirmModal: (feature) =>
+//                     ['exact', 'high'].includes(
+//                         feature.properties.match_code.confidence
+//                     )
+//             });
+//             if (result.type === 'nochange') submitForm();
+//         });
+//     };
+//
+//
 // // // Mapbox Address Confirmation Modal
 // // document.getElementById("search-js").onload = () => {
 // //     mapboxsearch.config.accessToken = MapBox_API_KEY;
@@ -128,3 +125,7 @@
 // // }
 //
 // })();
+
+
+
+
