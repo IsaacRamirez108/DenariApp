@@ -1,5 +1,9 @@
-// "use strict";
-// (function(){
+"use strict";
+(function(){
+
+    // This forces the page to scroll to the top when refreshed
+    $(document).load().scrollTop(0);
+
 //     let currentTab = 0; // Current tab is set to be the first tab (0)
 //     showTab(currentTab); // Display the current tab
 //
@@ -124,7 +128,7 @@
 // //     });
 // // }
 //
-// })();
+})();
 
 
 

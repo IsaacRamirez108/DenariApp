@@ -271,7 +271,8 @@ input.invalid {
 
 /* Style the button */
 .formBtn {
-    background-color: #03e9f4;
+    /*background-color: #03e9f4;*/
+    background-color: #182236;
     color: white;
     margin-top: 1.5em;
     padding: 10px 20px;
@@ -285,6 +286,7 @@ input.invalid {
 /* Style the button on hover */
 .formBtn:hover {
     background-color: #4c5dda;
+    /*background-color: #182236;*/
 }
 
 .mainFormBtn {
@@ -388,12 +390,13 @@ nav {
 
 a {
     text-decoration: none;
-    opacity: 0.75;
-    color: #fff;
+    color: white;
+    opacity: 1;
 }
 
 a:hover {
-    opacity: 1;
+    color: #182236;
+    /*opacity: 1;*/
 }
 
 a.btn {
@@ -418,7 +421,7 @@ a.btn:hover {
     padding: 100px 80px;
 }
 
-.testimonials {
+.FAQ-Section {
     padding: 100px 80px;
 }
 
@@ -648,7 +651,7 @@ header nav li {
 }
 
 /*Testimonials Section*/
-.testimonials .quote {
+.FAQ-Section .quote {
     font-size: 22px;
     font-weight: 300;
     line-height: 1.5;
@@ -656,11 +659,11 @@ header nav li {
 }
 
 @media (max-width: 800px) {
-    .testimonials .quote {
+    .FAQ-Section .quote {
         font-size: 18px;
         margin: 15px 0;
     }
-    .testimonials .author {
+    .FAQ-Section .author {
         font-size: 14px;
     }
 }
