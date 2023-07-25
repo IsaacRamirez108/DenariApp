@@ -414,7 +414,7 @@ a.btn:hover {
     background-color: #ce5856;
 }
 
-.hero, .packages, .contact, .destinations{
+.hero, .benefits, .contact, .about-us{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -596,7 +596,7 @@ header nav li {
 }
 
 /*Destinations Section*/
-.destinations .grid li {
+.about-us .grid li {
     height: 350px;
     padding: 20px;
     background-clip: content-box;
@@ -604,47 +604,47 @@ header nav li {
     background-position: center;
 }
 
-.destinations .grid li.small {
+.about-us .grid li.small {
     flex-basis: 30%;
 }
 
-.destinations .grid li.large {
+.about-us .grid li.large {
     flex-basis: 70%;
 }
 
 @media (max-width: 1100px) {
-    .destinations .grid li.small,
-    .destinations .grid li.large {
+    .about-us .grid li.small,
+    .about-us .grid li.large {
         flex-basis: 50%;
     }
 }
 
 @media (max-width: 800px) {
-    .destinations .grid li.small,
-    .destinations .grid li.large {
+    .about-us .grid li.small,
+    .about-us .grid li.large {
         flex-basis: 100%;
     }
 }
 
 /*Packages Section*/
-.packages .grid li {
+.benefits .grid li {
     padding: 50px;
     flex-basis: 50%;
     text-align: center;
 }
 
-.packages .grid li i {
+.benefits .grid li i {
     /*color: #e07e7b;*/
     color: #2b43a4;
 }
 
-.packages .grid li h4 {
+.benefits .grid li h4 {
     font-size: 30px;
     margin: 25px 0;
 }
 
 @media (max-width: 800px) {
-    .packages .grid li {
+    .benefits .grid li {
         flex-basis: 100%;
         padding: 20px;
     }
