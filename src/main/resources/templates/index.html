@@ -31,11 +31,11 @@
 <!--    <h2><a href="#">Life is a party!</a></h2>-->
     <div class="logo">
         <a href="/">
-            <img src="../static/img/allWhiteLogoMain.png" alt="nav-logo" th:src="@{/img/allWhiteLogoMain.png}" class="logo" width="190" height=40/>
+            <img src="../static/img/allWhiteLogoMain.png" alt="nav-logo" th:src="@{/img/allWhiteLogoMain.png}" class="logo" width="170" height=30/>
         </a>
     </div>
     <nav>
-        <li><a href="#">How it works</a></li>
+        <li><a href="#How-it-works">How it works</a></li>
         <li><a href="#About-us">About</a></li>
         <li><a href="#FAQ-Section">FAQ</a></li>
         <li><a href="#sign-up">Sign Up</a></li>
@@ -83,24 +83,19 @@
     </ul>
 </section>
 
-<section class="about-us" id="About-us">
-    <h3 class="title">About Us:</h3>
-<!--    <div class="home-content">-->
-        <p>At denari, we understand that paying rent every month is an important part of building a strong
-            credit history. However, landlords choose not to report your rental data.
-            That's why we've created a simple, secure platform that allows you to report your rental payments to
-            TransUnion.
-        </p>
-<!--    </div>-->
-<!--    <p>Tired of the beach alone? Are the plains too plain? Come along with us on one of our unusual adventures with yout friends. Here are some pictures from people who have had elevated experiences with us.</p>-->
+<!--How it works Section-->
+<section class="benefits" id="How-it-works">
+    <h3 class="title">How it works:</h3>
+    <!--    <div class="home-content">-->
+    <p>At denari, we understand that paying rent every month is an important part of building a strong
+        credit history. However, landlords choose not to report your rental data.
+        That's why we've created a simple, secure platform that allows you to report your rental payments to
+        TransUnion.
+    </p>
+    <!--    </div>-->
+    <!--    <p>Tired of the beach alone? Are the plains too plain? Come along with us on one of our unusual adventures with yout friends. Here are some pictures from people who have had elevated experiences with us.</p>-->
     <hr>
 
-    <ul class="grid">
-        <li class="small image-1"></li>
-        <li class="large image-2"></li>
-        <li class="large image-3"></li>
-        <li class="small image-4"></li>
-    </ul>
 </section>
 
 <!--FAQ Dropdown Section-->
@@ -147,11 +142,11 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
                     Accordion Item #3
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
                 <div class="accordion-body">
                     <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
@@ -159,16 +154,17 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
                     Accordion Item #3
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
                 <div class="accordion-body">
                     <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
             </div>
         </div>
+
     </div>
 </section>
 
@@ -301,6 +297,26 @@
 <!--                    </div>-->
 <!--                </div>-->
     </div>
+</section>
+
+<section class="about-us" id="About-us">
+    <h3 class="title">About Us:</h3>
+    <!--    <div class="home-content">-->
+    <p>At denari, we understand that paying rent every month is an important part of building a strong
+        credit history. However, landlords choose not to report your rental data.
+        That's why we've created a simple, secure platform that allows you to report your rental payments to
+        TransUnion.
+    </p>
+    <!--    </div>-->
+    <!--    <p>Tired of the beach alone? Are the plains too plain? Come along with us on one of our unusual adventures with yout friends. Here are some pictures from people who have had elevated experiences with us.</p>-->
+    <hr>
+
+    <ul class="grid">
+        <li class="small image-1"></li>
+        <li class="large image-2"></li>
+        <li class="large image-3"></li>
+        <li class="small image-4"></li>
+    </ul>
 </section>
 
 <footer>
