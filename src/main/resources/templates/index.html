@@ -35,10 +35,10 @@
         </a>
     </div>
     <nav>
-        <li><a href="#How-it-works">How it works</a></li>
-        <li><a href="#About-us">About</a></li>
-        <li><a href="#FAQ-Section">FAQ</a></li>
-        <li><a href="#sign-up">Sign Up</a></li>
+        <li><a class="nav-a" href="#How-it-works">How it works</a></li>
+        <li><a class="nav-a" href="#About-us">About</a></li>
+        <li><a class="nav-a" href="#FAQ-Section">FAQ</a></li>
+        <li><a class="nav-a" href="#sign-up">Sign Up</a></li>
     </nav>
 </header>
 
@@ -84,18 +84,30 @@
 </section>
 
 <!--How it works Section-->
-<section class="benefits" id="How-it-works">
-    <h3 class="title">How it works:</h3>
-    <!--    <div class="home-content">-->
-    <p>At denari, we understand that paying rent every month is an important part of building a strong
-        credit history. However, landlords choose not to report your rental data.
-        That's why we've created a simple, secure platform that allows you to report your rental payments to
-        TransUnion.
-    </p>
-    <!--    </div>-->
-    <!--    <p>Tired of the beach alone? Are the plains too plain? Come along with us on one of our unusual adventures with yout friends. Here are some pictures from people who have had elevated experiences with us.</p>-->
+<section class="about-us" id="How-it-works">
+    <h3 class="title">How it Works:</h3>
     <hr>
 
+    <div class="container how-it-works-columns">
+        <div class="row">
+            <div class="col circle-placement">
+                <div class="circle">1</div>
+            </div>
+            <div class="col circle-placement">
+                <div class="circle">2</div>
+            </div>
+            <div class="col circle-placement">
+                <div class="circle">3</div>
+            </div>
+        </div>
+    </div>
+
+<!--    <ul class="grid">-->
+<!--        <li class="small image-1"></li>-->
+<!--        <li class="large image-2"></li>-->
+<!--        <li class="large image-3"></li>-->
+<!--        <li class="small image-4"></li>-->
+<!--    </ul>-->
 </section>
 
 <!--FAQ Dropdown Section-->
@@ -301,22 +313,27 @@
 
 <section class="about-us" id="About-us">
     <h3 class="title">About Us:</h3>
-    <!--    <div class="home-content">-->
-    <p>At denari, we understand that paying rent every month is an important part of building a strong
-        credit history. However, landlords choose not to report your rental data.
-        That's why we've created a simple, secure platform that allows you to report your rental payments to
-        TransUnion.
-    </p>
-    <!--    </div>-->
-    <!--    <p>Tired of the beach alone? Are the plains too plain? Come along with us on one of our unusual adventures with yout friends. Here are some pictures from people who have had elevated experiences with us.</p>-->
     <hr>
 
-    <ul class="grid">
-        <li class="small image-1"></li>
-        <li class="large image-2"></li>
-        <li class="large image-3"></li>
-        <li class="small image-4"></li>
-    </ul>
+    <div class="clearfix">
+        <img class="logo col-md-6 float-md-start mb-3 ms-md-3" src="../static/img/isaac_img.jpg" alt="nav-logo" th:src="@{/img/isaac_img.jpg}" height=450/>
+        <p>
+            A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+        </p>
+        <p>
+            As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+        </p>
+    </div>
+
+    <h4>Mission Statement</h4>
+    <p>And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.</p>
+
+<!--    <ul class="grid">-->
+<!--        <li class="small image-1"></li>-->
+<!--        <li class="large image-2"></li>-->
+<!--        <li class="large image-3"></li>-->
+<!--        <li class="small image-4"></li>-->
+<!--    </ul>-->
 </section>
 
 <footer>
@@ -379,16 +396,16 @@
         x = document.getElementsByClassName("tab");
         y = x[currentTab].getElementsByClassName("required");
         // A loop that checks every input field in the current tab:
-        for (i = 0; i < y.length; i++) {
-            // If a field is empty...
-            if (y[i].value === "") {
-                // add an "invalid" class to the field:
-                y[i].className += " invalid";
-                // and set the current valid status to false
-                valid = false;
-            }
-        }
-        // If the valid status is true, mark the step as finished and valid:
+        // for (i = 0; i < y.length; i++) {
+        //     // If a field is empty...
+        //     if (y[i].value === "") {
+        //         // add an "invalid" class to the field:
+        //         y[i].className += " invalid";
+        //         // and set the current valid status to false
+        //         valid = false;
+        //     }
+        // }
+        // // If the valid status is true, mark the step as finished and valid:
         if (valid) {
             document.getElementsByClassName("step")[currentTab].className += " finish";
         }
