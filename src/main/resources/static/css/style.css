@@ -221,6 +221,7 @@ label {
     border: none;
     border-radius: 20px;
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Style the input fields */
@@ -283,7 +284,7 @@ input.invalid {
 
 /* Style the button on hover */
 .formBtn:hover {
-    background-color: #0396c5;
+    background-color: #4c5dda;
 }
 
 .mainFormBtn {
@@ -400,8 +401,8 @@ a.btn {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    background-color: #ea5247;
-    /*background-color: #03e9f4;*/
+    /*background-color: #ea5247;*/
+    background-color: #4c5dda;
     opacity: 1;
     transition: all 400ms;
 }
@@ -410,10 +411,14 @@ a.btn:hover {
     background-color: #ce5856;
 }
 
-section {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
+.hero, .packages, .contact, .destinations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px;
+}
+
+.testimonials {
     padding: 100px 80px;
 }
 
@@ -431,13 +436,13 @@ section:not(.hero):nth-child(even) {
 hr {
     width: 250px;
     height: 3px;
-    background-color: #e07e7b;
+    background-color: #2b43a4;
     border: 0;
     margin-bottom: 50px;
 }
 
 .image-1 {
-    background-image: url("https://images.unsplash.com/photo-1505852903341-fc8d3db10436?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=e2f72e62d5f4f04256dd9305d5f51f3c");
+    background-image: url("../img/Shutterstock_2198678511 (1).png");
 }
 
 .image-2 {
@@ -449,7 +454,7 @@ hr {
 }
 
 .image-4 {
-    background-image: url("https://images.unsplash.com/photo-1505483531331-fc3cf89fd382?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=4f305bbc0243f81f1bf6053a62d76297");
+    background-image: url("../img/Shutterstock_2198678511 (2).png");
 }
 
 section h3.title {
@@ -626,7 +631,8 @@ header nav li {
 }
 
 .packages .grid li i {
-    color: #e07e7b;
+    /*color: #e07e7b;*/
+    color: #2b43a4;
 }
 
 .packages .grid li h4 {
