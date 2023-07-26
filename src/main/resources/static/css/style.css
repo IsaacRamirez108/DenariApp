@@ -12,6 +12,10 @@ html, body {
     /*    color: #555;*/
 }
 
+.nav-a{
+    color: white;
+}
+
 li {
     margin-bottom: 1.5em;
 }
@@ -262,13 +266,21 @@ input.invalid {
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-    background-color: #03e9f4;
+    background-color: #3f2a9b;
 }
 
-/* Style the button */
+/* Style the  Sign-up Form */
+.form-check{
+    padding-top: 15px;
+    margin: 15px
+    /*display: flex;*/
+    /*align-items: center;*/
+}
+
 .formBtn {
     /*background-color: #03e9f4;*/
-    background-color: #182236;
+    /*background-color: #182236;*/
+    background-color: #3f2a9b;
     color: white;
     margin-top: 1.5em;
     padding: 10px 20px;
@@ -278,6 +290,7 @@ input.invalid {
     transition: background-color 0.3s ease;
     width: 100%;
 }
+
 
 /* Style the button on hover */
 .formBtn:hover {
@@ -357,13 +370,6 @@ h6 {
     }
 }
 
-.form-check{
-    padding-top:15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 
 
@@ -380,7 +386,7 @@ nav {
 
 a {
     text-decoration: none;
-    color: white;
+    /*color: white;*/
     opacity: 1;
 }
 
@@ -395,7 +401,7 @@ a.btn {
     font-weight: bold;
     text-align: center;
     /*background-color: #ea5247;*/
-    background-color: #4c5dda;
+    background-color: #3f2a9b;
     opacity: 1;
     transition: all 400ms;
 }
@@ -524,18 +530,18 @@ header nav li {
     color: #fff;
 }
 
-.hero .background-image {
+.hero .background-image{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/tobis.jpg");
-    /*background-repeat: no-repeat;*/
+    background-image: url("../img/landingPageImg.jpg");
     background-size: cover;
     z-index: -1;
-    background-color: #80a3db;
+    /*background-color: #80a3db;*/
 }
+
 
 .hero h1 {
     font: 72px "Amatic SC", sans-serif;
@@ -585,7 +591,96 @@ header nav li {
     }
 }
 
-/*Destinations Section*/
+/*Benefits Section*/
+.benefits .grid li {
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.benefits .grid li i {
+    color: #3f2a9b;
+    /*color: #2b43a4;*/
+}
+
+.benefits .grid li h4 {
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+@media (max-width: 800px) {
+    .benefits .grid li {
+        flex-basis: 100%;
+        padding: 20px;
+    }
+}
+
+/*How it Works Section*/
+.circle {
+    width: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    border: 3px solid #3f2a9b;
+    color: #3f2a9b;
+}
+
+.center-placement{
+    display: flex;
+    justify-content: center;
+}
+
+.top-spacing{
+    margin-top: 1em;
+}
+
+/*FAQ Section*/
+.FAQ-Section .quote {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 40px 0 25px;
+}
+
+@media (max-width: 800px) {
+    .FAQ-Section .quote {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+    .FAQ-Section .author {
+        font-size: 14px;
+    }
+}
+
+.accordion-button:not(.collapsed){
+    color: white;
+    /*background-color: #182236;*/
+    background-color: #3f2a9b;
+}
+
+
+/*Contact Section*/
+.contact form .btn {
+    padding: 18px 42px;
+}
+
+.contact form input {
+    padding: 15px;
+    margin-right: 30px;
+    font-size: 18px;
+    color: #555;
+    flex: 1;
+}
+
+@media (max-width: 1000px) {
+    .contact form input {
+        flex-basis: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+
+/*About Us Section*/
 .about-us .grid li {
     height: 350px;
     padding: 20px;
@@ -613,74 +708,6 @@ header nav li {
     .about-us .grid li.small,
     .about-us .grid li.large {
         flex-basis: 100%;
-    }
-}
-
-/*Packages Section*/
-.benefits .grid li {
-    padding: 50px;
-    flex-basis: 50%;
-    text-align: center;
-}
-
-.benefits .grid li i {
-    /*color: #e07e7b;*/
-    color: #2b43a4;
-}
-
-.benefits .grid li h4 {
-    font-size: 30px;
-    margin: 25px 0;
-}
-
-@media (max-width: 800px) {
-    .benefits .grid li {
-        flex-basis: 100%;
-        padding: 20px;
-    }
-}
-
-/*FAQ Section*/
-.FAQ-Section .quote {
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 1.5;
-    margin: 40px 0 25px;
-}
-
-@media (max-width: 800px) {
-    .FAQ-Section .quote {
-        font-size: 18px;
-        margin: 15px 0;
-    }
-    .FAQ-Section .author {
-        font-size: 14px;
-    }
-}
-
-.accordion-button:not(.collapsed){
-    color: white;
-    background-color: #182236;
-}
-
-
-/*Contact Section*/
-.contact form .btn {
-    padding: 18px 42px;
-}
-
-.contact form input {
-    padding: 15px;
-    margin-right: 30px;
-    font-size: 18px;
-    color: #555;
-    flex: 1;
-}
-
-@media (max-width: 1000px) {
-    .contact form input {
-        flex-basis: 100%;
-        margin: 0 0 20px 0;
     }
 }
 
