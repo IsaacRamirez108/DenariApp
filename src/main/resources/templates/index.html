@@ -273,27 +273,6 @@
                 </div>
             </form>
         </div>
-
-<!--                <div class="row">-->
-<!--                    <div class="col-lg-6 col-md-12">-->
-<!--                        <h6 style="color: #03e9f4">Reporting payments offers several benefits:</h6>-->
-<!--                        <ul>-->
-<!--                            <li>Build a Strong Credit History</li>-->
-<!--                            <li>Improve Credit Scores</li>-->
-<!--                            <li>Enhance Loan Approval Chances</li>-->
-<!--                            <li>Create a Financial Track Record</li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                    <div class="col-lg-6 col-md-12">-->
-<!--                        <h6 style="color: #03e9f4">Join our Beta Program Today</h6>-->
-<!--                        <p>-->
-<!--                            By joining our beta program, you get exclusive early access to our cutting-edge credit reporting-->
-<!--                            platform.-->
-<!--                            As a beta user, you have the opportunity to shape the future of our service and provide valuable-->
-<!--                            feedback that will help us refine and enhance our offering.-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
     </div>
 </section>
 
@@ -301,9 +280,21 @@
     <h3 class="title">About Us: (Beta)</h3>
     <hr>
 
-    <h4>Mission Statement</h4>
-    <p>And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.</p>
+    <div class="row">
+        <div class="col">
+            <h3 class="center-placement" style="color: #3f2a9b; margin-bottom: 1em;" >Mission Statement</h3>
+            <h5 class="center-placement" style="margin-bottom: 1em;">Empowering Financial Growth, One User at a Time</h5>
+            <p>At Denari, we are committed to revolutionizing the financial landscape by leveraging the power of rental data. Our mission is to empower individuals to take control of their credit scores and unlock greater financial opportunities. By seamlessly collecting and reporting rental data to TransUnion, we aim to provide our users with the recognition they deserve for their responsible rental behavior.</p>
+            <p> Through innovative technology and data-driven insights, we strive to bridge the credit access gap, enabling our users to build stronger financial foundations. We envision a future where everyone has equal opportunities to achieve their dreams, regardless of their financial history.</p>
+        </div>
+        <div class="col">
+            <h3 class="center-placement" style="color: #3f2a9b; margin-bottom: 1em;">Join our Beta Program Today</h3>
+            <p>Our product is still in its testing and development stage. As valued users, you have the exclusive opportunity to get an early glimpse of our innovative Fintech solution. During this phase, we actively seek your valuable feedback and suggestions to fine-tune and enhance the product. While many features are already operational, it's essential to note that some functionalities might still be under development, and you may encounter occasional bugs or issues.</p>
+            <p>Your involvement as early adopters is instrumental in shaping the final product and ensuring it meets your needs. Rest assured. Your participation in this Beta phase is instrumental in building a robust and user-centric platform, We thank you for joining us on this exciting journey toward financial empowerment and inclusion.</p>
+        </div>
+    </div>
 
+    <h5>Please submit all feedback to Support@denarisolutions.com</h5>
     <!--    <div class="clearfix">-->
 <!--        <img class="logo col-md-6 float-md-start mb-3 ms-md-3" src="../static/img/isaac_img.jpg" alt="nav-logo" th:src="@{/img/isaac_img.jpg}" height=450/>-->
 <!--        <p>-->
@@ -335,6 +326,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <div th:replace="~{partials :: scripts}"></div>
 <script>
+
+    // This forces the page to scroll to the top when refreshed
+    $(document).load().scrollTop(0);
+
     var currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
 
