@@ -3,32 +3,13 @@
 <head>
     <head div th:replace="partials :: head('Home')">
     <meta charset="UTF-8"/>
-    <title>Denari</title>
+    <title>DENARI</title>
 </head>
 
 <body>
-<!--<div class="logo">-->
-<!--    <a href="/">-->
-<!--        <img src="../static/img/MainImg.png" alt="nav-logo" th:src="@{/img/MainImg.png}" class="logo" width="150"-->
-<!--             height=33/>-->
-<!--    </a>-->
-<!--</div>-->
 
-<!--<div class="container secondTitle">-->
-<!--    <h1>Welcome to Denari</h1>-->
-<!--    <h3>Let us help you maximize your credit score</h3>-->
-<!--</div>-->
-
-
-
-<!--<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway" rel="stylesheet">-->
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
-<!--<link rel="stylesheet" href="assets/css/styles.css">-->
-<!--</head>-->
-<!--<body>-->
-<!-- Forked from a template on Tutorialzine: https://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox -->
+<!--NavBar-->
 <header>
-<!--    <h2><a href="#">Life is a party!</a></h2>-->
     <div class="logo">
         <a href="/">
             <img src="../static/img/allWhiteLogoMain.png" alt="nav-logo" th:src="@{/img/allWhiteLogoMain.png}" class="logo" width="170" height=30/>
@@ -42,15 +23,13 @@
     </nav>
 </header>
 
+<!--Landing Page First Section-->
 <section class="hero">
-    <div class="background-image"></div>
-    <div class="hero-content-area">
-<!--        <h1>Life is a party!</h1>-->
-<!--        <h3>Unmissable Adventure Tours With Your Friends</h3>-->
-<!--        <a href="#" class="btn">Contact Us Now</a>-->
-    </div>
+    <div class="img-fluid background-image"></div>
+    <div class="hero-content-area"></div>
 </section>
 
+<!--Benefits Section-->
 <section class="benefits" id="Benefits">
     <h3 class="title">Welcome to Denari</h3>
     <p>At Denari, we understand that paying rent every month is an important part of building a strong
@@ -58,7 +37,6 @@
         That's why we've created a simple, secure platform that allows you to report your rental payments to
         TransUnion.</p>
     <hr>
-
     <ul class="grid">
         <li>
             <i class="fa fa-line-chart fa-4x"></i>
@@ -86,28 +64,34 @@
 <!--How it works Section-->
 <section class="about-us" id="How-it-works">
     <h3 class="title">How it Works:</h3>
+    <h5 class="title">3 Easy steps:</h5>
     <hr>
-
     <div class="container how-it-works-columns">
         <div class="row">
-            <div class="col circle-placement">
-                <div class="circle">1</div>
+            <div class="col">
+                <div class="center-placement">
+                    <div class="circle">1</div>
+                </div>
+                <h4 class="center-placement top-spacing">SIGN UP</h4>
+                <p  class="center-placement">Verify your identity, add your rent details</p>
             </div>
-            <div class="col circle-placement">
-                <div class="circle">2</div>
+            <div class="col">
+                <div class="center-placement">
+                    <div class="circle">2</div>
+                </div>
+                <h4 class="center-placement top-spacing">WE REPORT</h4>
+                <p  class="center-placement">We begin to verify the data that you provided, once completed we report your payments to TransUnion.</p>
             </div>
-            <div class="col circle-placement">
-                <div class="circle">3</div>
+            <div class="col">
+                <div class="center-placement">
+                    <div class="circle">3</div>
+                </div>
+                <h4 class="center-placement top-spacing">SEE YOUR SCORE</h4>
+                <p  class="center-placement">Watch your credit score increase, We will continue to automatically verify &
+                    report your payments every month.</p>
             </div>
         </div>
     </div>
-
-<!--    <ul class="grid">-->
-<!--        <li class="small image-1"></li>-->
-<!--        <li class="large image-2"></li>-->
-<!--        <li class="large image-3"></li>-->
-<!--        <li class="small image-4"></li>-->
-<!--    </ul>-->
 </section>
 
 <!--FAQ Dropdown Section-->
@@ -119,60 +103,60 @@
         <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    Accordion Item #1
+                    How much will my credit score increase?
                 </button>
             </h2>
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                 <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    For thousands of RentReporters’ customers, the average increase is 40 points. While we would love to be able to predict a specific score we simply can’t because the scoring algorithm the bureaus use is proprietary and not available to us.
                 </div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    Accordion Item #2
+                    Will this decrease my credit score? What if I missed a rent payment or two?
                 </button>
             </h2>
             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                 <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    With Denari, we only report positive payment history. You can still use Denari if you’ve missed a couple rent payments or have been late paying rent. There is no credit check, no hard inquiry — just positive-only payment reporting and a 7-day money-back guarantee.
                 </div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    Accordion Item #3
+                    What if I have a roommate?
                 </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                 <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    Your roommate can use Denari too! All residents on the lease are eligible as long as there is a formal lease agreement (written or oral agreement), and they are on the lease. All users will be required to complete their own individual <a href="#sign-up"> sign-up </a> form with Denari.
                 </div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                    Accordion Item #3
+                    What happens if part of my rent is subsidized like Section 8?
                 </button>
             </h2>
             <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
                 <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    Great news.  Your entire rent amount is eligible to be reported, not just your net payment.  So make sure to provide the entire amount when you sign up, not just the portion you pay personally.  For example, if your rent is $1,000 and $600 is subsidized for a net payment of $400, you would indicate $1,000 as your rent amount.
                 </div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                    Accordion Item #3
+                    Am I able to view my credit score?
                 </button>
             </h2>
             <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
                 <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    Denari currently does not provide credit score monitoring at the moment. However, we are working on it (COMING SOON)
                 </div>
             </div>
         </div>
@@ -266,7 +250,7 @@
                         <div class="form-check">
                             <input class="form-check-input required" type="checkbox" value="" id="invalidCheck">
                             <label class="form-check-label">
-                                I Read and Accept <a href="/terms-of-use">Terms of Service</a> and <a href="/privacy-policy">Privacy Policy</a>
+                                I Read and Accept <a href="/terms-of-use">Terms of Service</a>  &  <a href="/privacy-policy"> Privacy Policy</a>
                             </label>
                         </div>
                     </div>
@@ -396,16 +380,16 @@
         x = document.getElementsByClassName("tab");
         y = x[currentTab].getElementsByClassName("required");
         // A loop that checks every input field in the current tab:
-        // for (i = 0; i < y.length; i++) {
-        //     // If a field is empty...
-        //     if (y[i].value === "") {
-        //         // add an "invalid" class to the field:
-        //         y[i].className += " invalid";
-        //         // and set the current valid status to false
-        //         valid = false;
-        //     }
-        // }
-        // // If the valid status is true, mark the step as finished and valid:
+        for (i = 0; i < y.length; i++) {
+            // If a field is empty...
+            if (y[i].value === "") {
+                // add an "invalid" class to the field:
+                y[i].className += " invalid";
+                // and set the current valid status to false
+                valid = false;
+            }
+        }
+        // If the valid status is true, mark the step as finished and valid:
         if (valid) {
             document.getElementsByClassName("step")[currentTab].className += " finish";
         }
