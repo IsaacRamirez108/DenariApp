@@ -10,52 +10,39 @@
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <style>
-    body {
-        text-align: center;
-        padding: 2em 0;
-    }
-    h1 {
-        color: #03e9f4;
-        font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-        font-weight: 900;
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
-    p {
-        color: #404F5E;
-        font-size:20px;
-        margin: 0;
-    }
     i {
-        color: #03e9f4;
+        color: #3f2a9b;
         font-size: 100px;
         line-height: 200px;
         margin-left:-15px;
     }
-    .card {
-        background: white;
-        padding: 3em;
-        border-radius: 4px;
-        box-shadow: 0 2px 3px black;
-        display: inline-block;
-        margin: 2em auto;
-    }
 </style>
 <body>
-<div class="logo">
-    <a href="/">
-        <img src="../static/img/MainImg.png" alt="nav-logo" th:src="@{/img/MainImg.png}" class="logo" width="150" height=33/>
-    </a>
-</div>
+<div th:replace="~{partials :: navbar}"></div>
 
-<div class="card">
-    <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
-        <i class="checkmark">✓</i>
+<section class="hero">
+    <div class="background-image"></div>
+    <div class="hero-content-area">
+<!--        <div class="card">-->
+<!--            <div style="border-radius:200px; height:100%; width:100%; background: #F8FAF5; margin:0 auto;">-->
+<!--                <i class="checkmark">✓</i>-->
+<!--            </div>-->
+<!--            <h1>Success</h1>-->
+<!--            <p>We have received your request<br/> You will be notified if any further information is required</p>-->
+<!--            <a href="/" style="text-decoration: none; color: #ededed"><button class="formBtn">Return to Homepage</button></a>-->
+<!--        </div>-->
+        <div class="card" style="width: 18rem; color: black;">
+            <div class="card-body">
+                <h5 class="card-title">Success</h5>
+                <p class="card-text">We have received your request<br/> You will be notified if any further information is required</p>
+                <a href="/" style="text-decoration: none; color: #ededed"><button class="formBtn">Return to Homepage</button></a>
+            </div>
+        </div>
     </div>
-    <h1>Success</h1>
-    <p>We have received your request<br/> You will be notified if any further information is required</p>
-    <a href="/" style="text-decoration: none; color: #ededed"><button class="formBtn">Return to Homepage</button></a>
-</div>
+</section>
+
+
+
 
 <div th:replace="~{partials :: scripts}"></div>
 </body>
