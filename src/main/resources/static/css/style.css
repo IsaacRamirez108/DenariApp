@@ -7,9 +7,9 @@
 
 html, body {
     /*background-image: linear-gradient(to right top, #0d2c5a, #03284e, #012442, #042035, #081b29);*/
+    /*background: -webkit-linear-gradient(right, #03e9f4, #22D8F3);*/
     color: black;
     height: 100%;
-    /*    color: #555;*/
 }
 
 .nav-a{
@@ -28,173 +28,12 @@ li {
     display: none;
 }
 
-#results {
-    text-align: center;
-    width: 600px;
-    margin: 50px auto 0;
-    color: #222;
-}
-
 label {
     font-family: "Raleway", sans-serif;
     font-size: 11pt;
     padding-left: 10px;
 }
 
-.star label:before {
-    color: #e32;
-    content: ' *';
-    display:inline;
-}
-
-.home {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
-}
-
-.home-content {
-    max-width: 600px;
-    z-index: 101;
-}
-
-.home-content h1 {
-    position: relative;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.home-content h3 {
-    position: relative;
-    font-size: 32px;
-    font-weight: 700;
-    color: #03e9f4;
-}
-
-.home-content p {
-    position: relative;
-    font-size: 16px;
-    margin: 20px 0 40px;
-}
-
-.home-content .btn-box {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 345px;
-    height: 50px;
-}
-
-/* KEYFRAMES ANIMATION */
-@keyframes showRight {
-    100% {
-        width: 0;
-    }
-}
-
-@keyframes manipActiveHover {
-    100% {
-        pointer-events: auto;
-    }
-}
-
-#card {
-    max-width: 45%;
-    margin: 50px auto;
-    background-color: #f6f6f6;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-#card-title {
-    color: black;
-    padding: 20px;
-    text-align: center;
-}
-
-#card-title h2 {
-    margin: 0;
-    font-size: 28px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.form {
-    padding: 20px;
-}
-
-.form label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #555;
-    margin-left: 1em;
-}
-
-.form-content {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    font-weight: 500;
-    color: #555;
-}
-
-.form-content:focus {
-    outline: none;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-#forgot-pass {
-    font-size: 14px;
-    font-weight: 500;
-    color: #555;
-    text-align: right;
-    display: block;
-    margin-top: 10px;
-}
-
-#signup {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #555;
-    text-align: center;
-    text-decoration: none;
-}
-
-#signup:hover {
-    text-decoration: underline;
-}
-
-#submit-btn {
-    background: -webkit-linear-gradient(right, #03e9f4, #22D8F3);
-    border: none;
-    border-radius: 25px;
-    box-shadow: 0px 1px 8px #1BC2D8;
-    cursor: pointer;
-    color: white;
-    font-family: "Raleway SemiBold", sans-serif;
-    height: 43px;
-    margin: 50px auto 0;
-    transition: 0.25s;
-    width: 100%;
-}
-
-#submit-btn:hover {
-    box-shadow: 0px 1px 18px #1BC2D8;
-}
 
 .center {
     display: block;
@@ -215,160 +54,8 @@ label {
     flex-direction: column;
 }
 
-/* Style the form */
-#regForm {
-    background: #ededed;
-    color: black;
-    padding: 40px;
-    width: 100%;
-    height: 100%;
-    min-width: 300px;
-    border: none;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* Style the input fields */
-input {
-    padding: 10px;
-    width: 100%;
-    font-size: 17px;
-    font-family: Raleway;
-    border: 1px solid #aaaaaa;
-}
-
-/* Mark input boxes that get an error on validation: */
-input.invalid {
-    background-color: #ffdddd;
-}
-
-/* Hide all steps by default: */
-.tab {
-    display: none;
-}
-
-/* Make circles that indicate the steps of the form: */
-.step {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbbbbb;
-    border: none;
-    border-radius: 50%;
-    display: inline-block;
-    opacity: 0.5;
-}
-
-/* Mark the active step: */
-.step.active {
-    opacity: 1;
-}
-
-/* Mark the steps that are finished and valid: */
-.step.finish {
-    background-color: #3f2a9b;
-}
-
-/* Style the  Sign-up Form */
-.form-check{
-    padding-top: 15px;
-    margin: 15px
-    /*display: flex;*/
-    /*align-items: center;*/
-}
-
-.formBtn {
-    /*background-color: #03e9f4;*/
-    /*background-color: #182236;*/
-    background-color: #3f2a9b;
-    color: white;
-    margin-top: 1.5em;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-    width: 100%;
-}
-
-
-/* Style the button on hover */
-.formBtn:hover {
-    background-color: #4c5dda;
-    /*background-color: #182236;*/
-}
-
-.mainFormBtn {
-    display: flex;
-    width: 100%;
-}
-
 h6 {
     margin-bottom: 1em;
-}
-
-/* For screens smaller than 576px (mobile devices) */
-@media (max-width: 575.98px) {
-    .home-content h1 {
-        font-size: 40px;
-    }
-    .home-content h3 {
-        font-size: 24px;
-    }
-    .home-content p {
-        font-size: 14px;
-    }
-    .home-content .btn-box {
-        width: 100%;
-    }
-    #card {
-        max-width: 90%;
-    }
-    .sectionTwo{
-        margin-top: 2em;
-    }
-}
-
-/* For screens between 576px and 991.98px */
-@media (min-width: 576px) and (max-width: 991.98px) {
-    .home-content h1 {
-        font-size: 58px;
-    }
-    .home-content h3 {
-        font-size: 38px;
-    }
-    .home-content p {
-        font-size: 26px;
-    }
-    .home-content .btn-box {
-        width: 100%;
-    }
-    #card {
-        max-width: 60%;
-    }
-    .sectionTwo{
-        margin-top: 4em;
-    }
-}
-
-/* For screens larger than 991.98px */
-@media (min-width: 992px) {
-    .home-content h1 {
-        font-size: 56px;
-    }
-    .home-content h3 {
-        font-size: 32px;
-    }
-    .home-content p {
-        font-size: 16px;
-    }
-    .home-content .btn-box {
-        width: 345px;
-    }
-    #card {
-        max-width: 45%;
-    }
 }
 
 /*Landing Page General Styling*/
@@ -379,13 +66,11 @@ nav {
 
 a {
     text-decoration: none;
-    /*color: white;*/
     opacity: 1;
 }
 
 a:hover {
     color: #182236;
-    /*opacity: 1;*/
 }
 
 a.btn {
@@ -636,8 +321,7 @@ header nav li {
     background-color: #3f2a9b;
 }
 
-
-/*Contact Section*/
+/*Sign-Up Form Section*/
 .contact form .btn {
     padding: 18px 42px;
 }
@@ -655,6 +339,127 @@ header nav li {
         flex-basis: 100%;
         margin: 0 0 20px 0;
     }
+}
+
+.form {
+    padding: 20px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-left: 1em;
+}
+
+.form-content {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-content:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style the form */
+#regForm {
+    background: #ededed;
+    color: black;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Style the input fields */
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that get an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #3f2a9b;
+}
+
+/* Style the  Sign-up Form */
+.form-check{
+    padding-top: 15px;
+    margin: 15px
+    /*display: flex;*/
+    /*align-items: center;*/
+}
+
+.formBtn {
+    /*background-color: #03e9f4;*/
+    /*background-color: #182236;*/
+    background-color: #3f2a9b;
+    color: white;
+    margin-top: 1.5em;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+
+/* Style the button on hover */
+.formBtn:hover {
+    background-color: #4c5dda;
+    /*background-color: #182236;*/
+}
+
+.mainFormBtn {
+    display: flex;
+    width: 100%;
 }
 
 /*About Us Section*/
