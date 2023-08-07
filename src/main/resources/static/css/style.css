@@ -18,7 +18,7 @@ html, body {
 }
 
 li {
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
 /* Sign up Steps Form */
@@ -136,6 +136,7 @@ section p {
 @media (max-width: 800px) {
     section {
         padding: 50px 20px;
+        min-height: 100vh;
     }
 }
 
